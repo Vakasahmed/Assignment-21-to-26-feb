@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        /* General sibling combinators */
+        .active~a{
+            background-color: crimson;
+        }
+        /* child combinators */
+        div>h1{
+            border: 2px;
+            color: blue;
+        }
+        /* descendent combinators */
+        main p{
+         border: 2px solid green;
+        }
+        /* Adjacent sibling combinators */
+        .active +a {
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="active" href="">Home</a>
+            <a href="">About me</a>
+            <a href="">Contact me</a>
+        </nav>
+    </header>
+    <main><div>
+        <h1 class="main_heading">Welcome to my page</h1>
+        <p class="main_para">Hello thanks for visiting</p>
+        <p class="main_para">My name is shaikh vakas ahmed</p>
+    </div>
+    </main>
+    <div style="text-align: center;">
+    <h1>SHADAB</h1>
+        <details>
+            SHADDY <h3>shaikh</h3>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis repellat odio fugit.
+        </details>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <select name="" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+        </select>
+        <details open>
+            <summary>About DELHI</summary>
+            <p>Delhi is the capital of India</p>
+        </details>
+        <form action="">
+            <label for="">cities</label>
+            <input type="text" name="cities" list="cities">
+            <datalist id="cities">
+                <option value="Delhi"></option>
+                <option value="Mumbai"></option>
+                <option value="Pune"></option>
+            </datalist>
+        </form>
+        <form action="">
+            <LAbel>CARS</LAbel>
+            <INPUt type="text" name="cars" list="cars"></INPUt>
+            <datalist id="cars">
+                <option value="sedan"></option>
+                <option value="suv"></option>
+                <option value="muv"></option>
+            </datalist>
+        </form>
+        <iframe src="./Assignment_04/index.html" frameborder="0" name="sample">Delhi is the capital of India</iframe>
+        <a href="./Assignment_04/index.html" target="sample">Delhi is the capital of India</a>
+    </div>
+        
+</body>
+</html>
